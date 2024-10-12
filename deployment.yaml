@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: c-townvanilla
-        image: raemondarellano/town-vanilla:1.0.0
+        image: raemondarellano/town-vanilla:1.0.0-1
         ports:
         - containerPort: 80 
