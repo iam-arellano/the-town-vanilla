@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-townvanilla
+  labels:
+    app: app-townvanilla
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-townvanilla
+  template:
+    metadata:
+      labels:
+        app: app-townvanilla
+    spec:
+      containers:
+      - name: c-townvanilla
+        image: raemondarellano/town-vanilla:1.0.0
+        ports:
+        - containerPort: 80 
